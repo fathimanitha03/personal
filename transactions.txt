@@ -1,0 +1,7 @@
+AN1002|Account opened with Rs.2000.0 on 2025-05-15 08:52:03
+AN1003|Account opened with Rs.9000.0 on 2025-05-15 08:55:38
+AN1003|Deposited Rs.8500.0 on 2025-05-15 08:56:30
+AN1003|Withdrew Rs.900.0 on 2025-05-15 08:56:51
+AN1003|Withdrew Rs.980.0 on 2025-05-15 08:57:24
+AN1003|Deposited Rs.8000.0 on 2025-05-15 08:57:51
+AN1003|Withdrew Rs.850.0 on 2025-05-15 08:58:27

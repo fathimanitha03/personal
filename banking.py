@@ -193,9 +193,10 @@ def transaction_history():
         print("Account not found.......")
         return
 
-    print("Transaction History:")
-    for t in accounts[acc_no]['transactions']:
+    print("Last 5 Transactions:")
+    for t in accounts[acc_no]['transactions'][-5:]:
         print("-", t)
+
 
 # ----------------------------- #
 #         Admin Features       #

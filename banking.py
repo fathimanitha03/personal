@@ -249,6 +249,11 @@ def delete_account():
     else:
         print("Deletion cancelled.")
 
+        
+def show_total_transactions():
+    total = sum(len(data['transactions']) for data in accounts.values())
+    print(f"\nTotal number of transactions across all accounts: {total}")
+
 # ----------------------------- #
 #         Menu & Login         #
 # ----------------------------- #

@@ -61,19 +61,19 @@ def write_transaction(acc_no, txn):
 def generate_account_number():
     if not os.path.exists(ACCOUNT_NUM_FILE):
         with open(ACCOUNT_NUM_FILE, 'w') as account_num_file:
-            account_num_file.write('1001')  # Starting account number
+            account_num_file.write('1001')  
 
     with open(ACCOUNT_NUM_FILE, 'r+') as account_num_file:
         try:
-            current = int(account_num_file.read().strip())  # Read current number
+            current = int(account_num_file.read().strip()) 
         except ValueError:
-            current = 1001  # Fallback if the file has corrupted data
-        new = current + 1  # Increment account number
+            current = 1001  
+        new = current + 1  
 
-        account_num_file.seek(0)  # Go back to the start of the file
-        account_num_file.write(str(new))  # Save the new number
+        account_num_file.seek(0)  
+        account_num_file.write(str(new))  
 
-        return f"AN{current}"  # Return account number with 'AN' prefix
+        return f"AN{current}" 
 
 def create_password(length=8):
     return ''.join(random.choices(string.ascii_letters + string.digits, k=length))
@@ -107,8 +107,8 @@ def create_account():
         print("Invalid input......")
         return
 
-    acc_no = generate_account_number()  # Get the new account number with 'AN' prefix
-    username = "user" + acc_no[2:]  # Example username format, removing 'AN' prefix
+    acc_no = generate_account_number()  
+    username = "user" + acc_no[2:]  
     password = create_password()
 
     with open(CREDENTIALS_FILE, 'a') as credentials_file:

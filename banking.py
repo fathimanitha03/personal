@@ -264,7 +264,8 @@ def admin_menu():
         print("1. Create New Account")
         print("2. Delete Account")
         print("3. Update Account Name")
-        print("4. Logout")
+        print("4. show all transactions")
+        print("5. Logout ")
         choice = input("Enter your choice: ")
 
         if choice == '1':
@@ -274,6 +275,8 @@ def admin_menu():
         elif choice == '3':
             update_account()
         elif choice == '4':
+            show_total_transactions()
+        elif choice == '5':
             break
         else:
             print("Invalid option........")
